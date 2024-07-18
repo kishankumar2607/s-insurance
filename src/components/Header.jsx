@@ -49,7 +49,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link href={"/"} passHref legacyBehavior>
+              <Link href={"/cyber-insurance"} passHref legacyBehavior>
                 <a>Cyber Insurance</a>
               </Link>
             </li>
