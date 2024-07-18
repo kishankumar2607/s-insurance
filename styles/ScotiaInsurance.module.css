@@ -1,0 +1,592 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.header {
+  width: 100%;
+  background-color: #f5f6fc;
+}
+
+.languageSelector {
+  background-color: #f5f6fc;
+  padding: 7px 60px;
+  text-align: right;
+}
+
+.language {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  padding: 5px 18px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logoImage :nth-child(n) {
+  width: 196px;
+  height: auto;
+}
+
+.navLinks {
+  display: flex;
+  list-style-type: none;
+  gap: 35px;
+}
+
+.navLinks a {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #ec111a;
+  transition: all 0.5 ease-in;
+}
+
+.navIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.heroBanner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #ec111a;
+  color: #fff;
+  background-image: url('../src//assets/images/home-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  position: relative;
+  padding: 0rem 5rem;
+}
+
+.heroTitle {
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  max-width: 610px;
+}
+
+
+.sectionTitle {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.imageSizeStyle {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.insuranceTypes {
+  padding: 4rem;
+}
+
+.typesList {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 2rem 3rem 0rem;
+}
+
+.typeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typeIcon {
+  width: 96px;
+  height: 96px;
+}
+
+.typeName {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 14px;
+  border-bottom: 1px dotted #333;
+}
+
+.whyChooseUs {
+  background-color: #fafbfd;
+  padding: 4rem;
+}
+
+.sectionDescription {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.reasonsList {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0rem 8rem;
+}
+
+.reasonItem {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex: 1;
+}
+
+.reasonIcon:nth-child(n) {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.reasonTitle {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+}
+
+.reasonDescription {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.decorativeIcon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 40px auto 0;
+}
+
+.manageInsurance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10rem;
+  background-color: #fff;
+}
+
+.manageContent {
+  max-width: 50%;
+}
+
+.manageTitle {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.manageFeatures {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #333;
+  list-style-type: none;
+  padding-left: 1rem;
+  margin-bottom: 30px;
+}
+
+.manageFeatures li {
+  margin-bottom: 10px;
+}
+
+.discoverButton {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ec111a;
+  border: 1.5px solid #ec111a;
+  border-radius: 5px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.discoverButton:hover {
+  color: #ec111a;
+  background-color: #ffffff;
+  border-color: #ec111a;
+}
+
+.loginDiv{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.loginDiv :nth-child(2){
+  padding-left: 5px;
+}
+
+.loginLink {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px dotted #333;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.loginLink:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.appDownload {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 30px;
+}
+
+.appStoreLinks {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.appStoreIcon :nth-child(n) {
+  width: 150px;
+  cursor: pointer;
+}
+
+.googlePlayIcon :nth-child(n){
+  width: 165px;
+  cursor: pointer;
+} 
+
+.manageImage {
+  max-width: 80%;
+  height: auto;
+}
+
+.insurerPartners {
+  background-color: #fafbfd;
+  padding: 4rem 6rem;
+}
+
+.partnerDescription {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  text-align: center;
+  padding: 0rem 8rem 1.5rem;
+}
+
+.partnerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partnerLogo:nth-child(n) {
+  max-width: 200px;
+  height: auto;
+}
+
+.partnerLogo:nth-child(2){
+  max-width: 130px !important;
+  height: auto;
+}
+
+.partnerLogo:nth-child(3){
+  max-width: 180px !important;
+  height: auto;
+}
+
+.faq {
+  padding: 4rem 6rem;
+}
+
+.faqList {
+  list-style-type: none;
+  padding: 0rem 6rem;
+}
+
+.faqItem {
+  border-bottom: 1.5px solid #949494;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQuestion {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boldQuestion {
+  font-weight: bold;
+  color: #ec111a;
+}
+
+.faqToggle {
+  font-size: 24px;
+  color: #ec111a;
+}
+
+.faqAnswer {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #666;
+  padding: 0 0 20px;
+}
+
+.legalLink {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6f42c1;
+  text-decoration: none;
+  display: block;
+  padding: 4rem 6rem 1rem;
+  display: flex;
+    align-items: center;
+}
+
+.legalContentParagraph{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
+  padding: 0rem 6rem;
+}
+
+.slide-down {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.slide-up {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.arrowIcon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #6f42c1 transparent transparent transparent;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrowIcon.rotate {
+  transform: rotate(180deg);
+}
+
+.callToAction {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 8rem;
+  background-color: #fff;
+  border-top: 1px solid #e2e8ee;
+}
+
+.ctaItem {
+  flex: 1 1;
+  text-align: left;
+  padding: 0 20px
+}
+
+
+.ctaIcon :nth-child(n) {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.ctaTitle {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ctaDescription {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ctaButton {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px dotted #333;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  border-bottom: 1px solid #fff
+}
+
+.footer{
+  border-top: 1px solid #e2e8ee;
+  background-color: #fff;
+}
+
+.innerFooterStyle {
+  padding: 2rem 8rem;
+}
+
+.footerNav {
+  margin-bottom: 10px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin: 0 15px;
+}
+
+.footerLinks a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #333;
+  text-decoration: none;
+}
+
+.copyrightDiv{
+  background-color: #f5f6fc;
+}
+
+.copyright {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #333;
+  text-align: right;
+  padding: 1.2rem 13rem;
+}
+
+@media (max-width: 991px) {
+  .languageSelector,
+  .navigation,
+  .heroContent,
+  .manageInsurance,
+  .callToAction,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    margin-top: 20px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .reasonsList,
+  .manageInsurance,
+  .callToAction {
+    flex-direction: column;
+  }
+
+  .reasonItem,
+  .manageContent,
+  .ctaItem {
+    margin-bottom: 30px;
+  }
+
+  .manageImage {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .footerLinks {
+    flex-wrap: wrap;
+  }
+
+  .footerLinks li {
+    margin: 5px 10px;
+  }
+}
