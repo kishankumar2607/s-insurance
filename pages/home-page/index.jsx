@@ -1,21 +1,21 @@
 
-import HeroBanner from './../../src/components/HeroBanner';
-import InsuranceTypes from './../../src/components/InsuranceTypes';
-import WhyChooseUs from './../../src/components/WhyChooseUs';
-import ManageInsurance from './../../src/components/ManageInsurance';
-import InsurerPartners from './../../src/components/InsurerPartners';
-import FAQ from './../../src/components/FAQ';
+import HeroBannerComponent from './../../src/components/HeroBannerComponent/HeroBannerComponent';
+import InsuranceTypesComponent from './../../src/components/InsuranceTypesComponent/InsuranceTypesComponent';
+import WhyChooseUsComponent from './../../src/components/WhyChooseUsComponent/WhyChooseUsComponent';
+import ManageInsuranceComponent from './../../src/components/ManageInsuranceComponent/ManageInsuranceComponent';
+import InsurerPartnersComponent from './../../src/components/InsurerPartnersComponent/InsurerPartnersComponent';
+import FAQComponent from './../../src/components/FAQComponent/FAQComponent';
 
 
 const HomePage = () => {
   return (
     <div>
-        <HeroBanner />
-        <InsuranceTypes />
-        <WhyChooseUs />
-        <ManageInsurance />
-        <InsurerPartners />
-        <FAQ />
+        <HeroBannerComponent />
+        <InsuranceTypesComponent />
+        <WhyChooseUsComponent />
+        <ManageInsuranceComponent />
+        <InsurerPartnersComponent />
+        <FAQComponent />
     </div>
   );
 };

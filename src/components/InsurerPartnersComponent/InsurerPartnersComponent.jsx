@@ -1,13 +1,14 @@
 import React from "react";
-import styles from "../../styles/ScotiaInsurance.module.css";
-import ImageComponent from "./ImageComponent";
+import styles from "./InsurerPartnersComponent.module.css";
+import ImageComponent from "../ImageComponent/ImageComponent";
 import {
   image1,
   image2,
   image3,
   image4,
   image5,
-} from "../assets/partners-images/PartnerImage";
+} from "../../assets/partners-images/PartnerImage";
+import { Container } from "react-bootstrap";
 
 const partnerLogos = [
   {
@@ -37,9 +38,10 @@ const partnerLogos = [
   }
 ];
 
-function InsurerPartners() {
+const InsurerPartnersComponent = () => {
   return (
     <section className={styles.insurerPartners}>
+      <Container>
       <h2 className={styles.sectionTitle}>Our insurer partners</h2>
       <p className={styles.partnerDescription}>
         At Scotia Insurance we are committed to building strong relationships
@@ -56,8 +58,9 @@ function InsurerPartners() {
           />
         ))}
       </div>
+      </Container>
     </section>
   );
 }
 
-export default InsurerPartners;
+export default InsurerPartnersComponent;

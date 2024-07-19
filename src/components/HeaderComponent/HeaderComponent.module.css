@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.languageSelector {
+  background-color: #f5f6fc;
+  padding: 10px 60px;
+  text-align: right;
+}
+
+.shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.language {
+  font-size: 14px;
+  color: #000;
+  padding: 5px 18px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+}
+
+.logoImage :nth-child(n) {
+  width: 200px;
+  height: auto;
+}
+
+.navLinks {
+  display: flex;
+  list-style-type: none;
+  gap: 35px;
+  margin-bottom: 0;
+}
+
+.navLinks a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #ec111a;
+  transition: all 0.5 ease-in;
+}
+
+.navIcon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 991px) {
+  .languageSelector,
+  .navigation {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    margin-top: 20px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import styles from "../../styles/ScotiaInsurance.module.css";
+import styles from "./FAQComponent.module.css";
+import { Container } from "react-bootstrap";
 
 const faqItems = [
   {
@@ -43,7 +44,7 @@ Scotia Travel Insurance, distributed by the BNS Insurance Agency Inc., is underw
 These products are not available in Scotiabank branches.  All insurance coverage is subject to certain limitations, restrictions and exclusions set out in the applicable Certificate of Insurance or Policy of Insurance and/or may vary by province or territory.
 Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc. Google Play, the Google Play logo and Android are trademarks of Google LLC.`;
 
-const FAQ = () => {
+const FAQComponent = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [legalNotesOpen, setLegalNotesOpen] = useState(false);
 
@@ -57,54 +58,58 @@ const FAQ = () => {
 
   return (
     <section className={styles.faq}>
-      <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
-      <ul className={styles.faqList}>
-        {faqItems.map((item, index) => (
-          <li key={index} className={styles.faqItem}>
-            <div
-              className={`${styles.faqQuestion} ${
-                openIndex === index ? styles.boldQuestion : ""
-              }`}
-              onClick={() => toggleFAQ(index)}
-            >
-              {item.question}
-              <span className={styles.faqToggle}>
-                {openIndex === index ? "−" : "+"}
-              </span>
-            </div>
-            {openIndex === index && (
-              <div className={styles.faqAnswer}>{item.answer}</div>
-            )}
-          </li>
-        ))}
-      </ul>
-      <div className={styles.legalNotes}>
-        <a
-          href="#legal"
-          className={styles.legalLink}
-          onClick={toggleLegalNotes}
-        >
-          Legal notes
-          <span
-            className={`${styles.arrowIcon} ${
-              legalNotesOpen ? styles.rotate : ""
-            }`}
-          ></span>
-        </a>
-        {legalNotesOpen && (
-          <div
-            className={`${styles.legalContent} ${
-              legalNotesOpen ? styles.slideDown : styles.slideUp
-            } ${legalNotesOpen ? styles.fadeIn : ""}`}
+      <Container>
+        <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
+        <ul className={styles.faqList}>
+          {faqItems.map((item, index) => (
+            <li key={index} className={styles.faqItem}>
+              <div
+                className={`${styles.faqQuestion} ${
+                  openIndex === index ? styles.boldQuestion : ""
+                }`}
+                onClick={() => toggleFAQ(index)}
+              >
+                {item.question}
+                <span className={styles.faqToggle}>
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </div>
+              {openIndex === index && (
+                <div className={styles.faqAnswer}>{item.answer}</div>
+              )}
+            </li>
+          ))}
+        </ul>
+        <div className={styles.legalNotes}>
+          <a
+            href="#legal"
+            className={styles.legalLink}
+            onClick={toggleLegalNotes}
           >
-            {legalNotes.split("\n").map((paragraph, index) => (
-              <p key={index} className={styles.legalContentParagraph}>{paragraph}</p>
-            ))}
-          </div>
-        )}
-      </div>
+            Legal notes
+            <span
+              className={`${styles.arrowIcon} ${
+                legalNotesOpen ? styles.rotate : ""
+              }`}
+            ></span>
+          </a>
+          {legalNotesOpen && (
+            <div
+              className={`${styles.legalContent} ${
+                legalNotesOpen ? styles.slideDown : styles.slideUp
+              } ${legalNotesOpen ? styles.fadeIn : ""}`}
+            >
+              {legalNotes.split("\n").map((paragraph, index) => (
+                <p key={index} className={styles.legalContentParagraph}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
+      </Container>
     </section>
   );
 };
 
-export default FAQ;
+export default FAQComponent;

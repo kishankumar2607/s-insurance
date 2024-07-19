@@ -1,0 +1,106 @@
+.manageInsurance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #fff;
+  }
+  
+  .manageContent {
+    width: 78%;
+  }
+  
+  .manageTitle {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 50px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .manageFeatures {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .manageFeatures li {
+    margin-bottom: 10px;
+  }
+  
+  .discoverButton {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ec111a;
+    border: 1.5px solid #ec111a;
+    border-radius: 5px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .discoverButton:hover {
+    color: #ec111a;
+    background-color: #ffffff;
+    border-color: #ec111a;
+  }
+  
+  .loginDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .loginDiv :nth-child(2){
+    padding-left: 5px;
+  }
+  
+  .loginLink {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px dotted #333;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .loginLink:hover {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .appDownload {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .appStoreLinks {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .appStoreIcon :nth-child(n) {
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .googlePlayIcon :nth-child(n){
+    width: 165px;
+    cursor: pointer;
+  } 
+  
+  .manageImage {
+    max-width: 80%;
+    height: auto;
+  }
+  

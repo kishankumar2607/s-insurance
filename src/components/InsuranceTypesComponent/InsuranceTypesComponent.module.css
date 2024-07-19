@@ -1,0 +1,40 @@
+
+.insuranceTypes {
+    padding: 4rem 0rem;
+  }
+
+  .sectionTitle{
+    font-size: 36px;
+    padding: 1rem 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 50px;
+  }
+  
+  .typesList {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 2rem 3rem 0rem;
+  }
+  
+  .typeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .typeIcon {
+    width: 96px;
+    height: 96px;
+  }
+  
+  .typeName {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-top: 14px;
+    border-bottom: 1px dotted #333;
+  }
+  

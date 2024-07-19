@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import CallToAction from "./CallToAction";
+import HeaderComponent from "./HeaderComponent/HeaderComponent";
+import CallToActionComponent from "./CallToActionComponent/CallToActionComponent";
+import FooterComponent from "./FooterComponent/FooterComponent";
 
 export default function Layout({ children }) {
   return (
     <div>
-      <Header />
+      <HeaderComponent />
       <main>{children}</main>
-      <CallToAction />
-      <Footer />
+      <CallToActionComponent />
+      <FooterComponent />
     </div>
   );
 }
