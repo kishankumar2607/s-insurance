@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import InsuranceHeroBannerComponent from './../../src/components/InsuranceHeroBannerComponent/InsuranceHeroBannerComponent';
 
 const index = () => {
   return (
-    <div>Cyber Insurance Page</div>
-  )
-}
+    <div>
+      <InsuranceHeroBannerComponent />
+    </div>
+  );
+};
 
-export default index
+export default index;

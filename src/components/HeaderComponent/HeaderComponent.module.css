@@ -1,12 +1,19 @@
 .header {
   width: 100%;
   background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .languageSelector {
+  display: flex;
+  align-items: center;
   background-color: #f5f6fc;
   padding: 10px 60px;
   text-align: right;
+  justify-content: flex-end;
+
 }
 
 .shadow {
@@ -16,7 +23,15 @@
 .language {
   font-size: 14px;
   color: #000;
-  padding: 5px 18px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.downArrowImage{
+  width: 15px;
+  height: auto;
+  margin-right: 4rem;
+  cursor: pointer;
 }
 
 .navigation {

@@ -3,6 +3,7 @@ import styles from "./HeaderComponent.module.css";
 import ImageComponent from "../ImageComponent/ImageComponent";
 import logo from "../../assets/logo/scotiaInsurance-logo.png";
 import searchIcon from "../../assets/images/search-icon.svg";
+import downArrow from "../../assets/images/down-arrow.png";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
 
@@ -11,19 +12,20 @@ const HeaderComponent = () => {
     <header className={styles.header}>
       <div className={styles.languageSelector}>
         <span className={styles.language}>English</span>
+        <ImageComponent src={downArrow} alt="arror" imageStyle={styles.downArrowImage}/>
       </div>
       <div className={styles.shadow}>
         <Container>
           <nav className={styles.navigation}>
             <div className={styles.navContainer}>
               <div className={styles.logo}>
-                <a href="/">
+                <Link href="/" passHref>
                   <ImageComponent
                     src={logo}
                     alt="Scotia Insurance Logo"
                     imageStyle={styles.logoImage}
                   />
-                </a>
+                </Link>
               </div>
               <ul className={styles.navLinks}>
                 <li>
