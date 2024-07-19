@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from "../../../styles/ScotiaInsurance.module.css";
+import styles from "./ImageComponent.module.css";
 
 const ImageComponent = ({src, alt, imageStyle}) => {
   return (
