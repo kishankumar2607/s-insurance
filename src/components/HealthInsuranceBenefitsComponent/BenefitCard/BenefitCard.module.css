@@ -1,0 +1,31 @@
+
+.benefit {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid #ec111a;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .benefit:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon :nth-child(n) {
+    width: 40px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+  

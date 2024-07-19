@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
+.title{
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+  font-weight: 900;
+  line-height: 50px;
+  margin-bottom: 3rem;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

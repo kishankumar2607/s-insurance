@@ -68,11 +68,39 @@
   letter-spacing: 0.5px;
   color: #333;
   text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navLinks a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ec111a;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLinks a:hover::before {
+  visibility: visible;
+  width: 100%;
 }
 
 .navLinks a:hover {
   color: #ec111a;
-  transition: all 0.5 ease-in;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLinks a.active {
+  color: #ec111a;
+}
+
+.navLinks a.active::before {
+  visibility: visible;
+  width: 100%;
 }
 
 .navIcon {

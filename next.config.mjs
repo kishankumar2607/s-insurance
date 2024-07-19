@@ -12,6 +12,11 @@ export default {
   ) {
     return {
       "/": { page: "/home-page" },
+      "/auto": { page: "/auto" },
+      "/home": { page: "/home" },
+      "/health": { page: "/health" },
+      "/life": { page: "/life" },
+      "/travel": { page: "/travel" },
       "/cyber-insurance": { page: "/cyber-insurance" },
     };
   },
