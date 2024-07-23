@@ -1,84 +1,123 @@
-/* components/AutoQuoteForm.module.css */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f8fc;
-  }
-  
-  .formContainer {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    /* width: 400px; */
-  }
-
-  .imageDiv{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0rem;
+  background-color: #f7f8fc;
 }
 
-  .imagestyle:nth-child(n){
-    height: 100%;
-    width: 150px;
+.formContainer {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 70%;
 }
-  
-  .header h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-  }
-  
-  .formGroup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    flex: 1;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .savingsLink a {
-    color: #0277bd;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  .footer {
-    text-align: left;
-  }
-  
-  .footer p {
-    margin: 5px 0;
-  }
-  
-  .footer a {
-    color: #0277bd;
-    text-decoration: none;
-  }
-  
+
+.imageDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.imagestyle:nth-child(n) {
+  height: 100%;
+  width: 120px;
+}
+
+.header h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 900;
+  margin: 1.5rem 0rem 2rem;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1c2444;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ec111a;
+  border: 2px solid #ec111a;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+  color: #ec111a;
+  background-color: #ffffff;
+  border-color: #ec111a;
+}
+
+.savingsLink {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  background-color: #f5f6fc;
+  padding: 1.5rem 0rem;
+}
+
+.savingsLink :nth-child(n) {
+  padding: 0;
+  margin: 0;
+}
+
+.savingsLink h4 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.savingsLink p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+  max-width: 275px;
+}
+
+.savingsLink a {
+  color: #007eab;
+  font-size: 18px;
+  font-weight: 900;
+  border-bottom: 2.5px solid #007eab;
+}
+
+.footer {
+  text-align: left;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #0277bd;
+  text-decoration: none;
+}
