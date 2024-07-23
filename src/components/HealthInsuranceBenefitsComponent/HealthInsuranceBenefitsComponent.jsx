@@ -33,7 +33,7 @@ const HealthInsuranceBenefitsComponent = () => {
   return (
     <div className={styles.container}>
       <Container>
-        <h2 className={styles.title}>Why consider health insurance?</h2>
+        <h2 className={styles.title}>Why consider cyber insurance?</h2>
         <div className={styles.benefits}>
           {benefitsData.map((benefit, index) => (
             <BenefitCard

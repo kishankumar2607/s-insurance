@@ -1,0 +1,84 @@
+/* components/AutoQuoteForm.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f8fc;
+  }
+  
+  .formContainer {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* width: 400px; */
+  }
+
+  .imageDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+  .imagestyle:nth-child(n){
+    height: 100%;
+    width: 150px;
+}
+  
+  .header h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .savingsLink a {
+    color: #0277bd;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    text-align: left;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer a {
+    color: #0277bd;
+    text-decoration: none;
+  }
+  
