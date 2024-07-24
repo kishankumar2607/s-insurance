@@ -49,25 +49,7 @@
   border: 2px solid #1c2444;
   border-radius: 5px;
   margin-right: 10px;
-}
-
-.button {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #ec111a;
-  border: 2px solid #ec111a;
-  border-radius: 5px;
-  padding: 10px 40px;
-  cursor: pointer;
-  margin-left: 1rem;
-  transition: all 0.2s ease-in;
-}
-
-.button:hover {
-  color: #ec111a;
-  background-color: #ffffff;
-  border-color: #ec111a;
+  position: relative;
 }
 
 .savingsLink {
@@ -109,15 +91,11 @@
   border-bottom: 2.5px solid #007eab;
 }
 
-.footer {
-  text-align: left;
-}
-
-.footer p {
-  margin: 5px 0;
-}
-
-.footer a {
-  color: #0277bd;
-  text-decoration: none;
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  position: absolute;
+  left: 37%;
+    top: 56%;
 }

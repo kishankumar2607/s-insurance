@@ -19,6 +19,7 @@ export default {
       "/travel": { page: "/travel" },
       "/cyber-insurance": { page: "/cyber-insurance" },
       "/cyber-quote": { page: "/cyber-quote" },
+      "/quote": { page: "/quote" },
     };
   },
 };
