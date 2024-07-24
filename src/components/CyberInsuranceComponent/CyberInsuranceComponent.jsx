@@ -1,9 +1,14 @@
-import Image from "next/image";
+import { useState } from "react";
 import styles from "./CyberInsuranceComponent.module.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { Container } from "react-bootstrap";
+import ImageComponent from "../ImageComponent/ImageComponent";
+import ChangeImage from "./ChangeImage";
+import backgroundImage from "../../assets/cyber-form/background.svg";
 
 const CyberInsuranceComponent = () => {
+  const [selectedOption, setSelectedOption] = useState("individual");
+
   return (
     <div className={styles.container}>
       <Container>
@@ -15,32 +20,54 @@ const CyberInsuranceComponent = () => {
               <small>Complete your online quote and save.</small>
             </div>
             <div className={styles.options}>
-              <label>
-                <input type="radio" name="protection" value="individual" />
+              <label
+                className={
+                  selectedOption === "individual" ? styles.checked : ""
+                }
+              >
                 Individual
+                <input
+                  type="radio"
+                  name="protection"
+                  value="individual"
+                  checked={selectedOption === "individual"}
+                  onChange={() => setSelectedOption("individual")}
+                />
               </label>
-              <label>
+              <label
+                className={
+                  selectedOption === "small-business" ? styles.checked : ""
+                }
+              >
+                Small Business
                 <input
                   type="radio"
                   name="protection"
                   value="small-business"
-                  defaultChecked
+                  checked={selectedOption === "small-business"}
+                  onChange={() => setSelectedOption("small-business")}
                 />
-                Small Business
               </label>
-              <label>
+              <label
+                className={
+                  selectedOption === "large-corporation" ? styles.checked : ""
+                }
+              >
+                Large Corporation
                 <input
                   type="radio"
                   name="protection"
                   value="large-corporation"
+                  checked={selectedOption === "large-corporation"}
+                  onChange={() => setSelectedOption("large-corporation")}
                 />
-                Large Corporation
               </label>
             </div>
             <ButtonComponent href={"#"} title="Next" />
           </div>
           <div className={styles.imageContainer}>
-            <Image src="/image.png" alt="Store" width={400} height={300} />
+            {/* <ChangeImage /> */}
+            <ImageComponent src={backgroundImage} alt="Store" />
           </div>
         </div>
       </Container>

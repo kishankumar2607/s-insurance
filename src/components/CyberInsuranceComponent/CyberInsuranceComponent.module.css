@@ -1,37 +1,57 @@
 .container {
   background-color: #fff;
-  padding: 5rem 0rem;
 }
 
 .anotherDiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5rem 6rem;
 }
 
 .formContainer {
-  max-width: 400px;
+  /* max-width: 400px; */
+  width: 50%;
+  padding-right: 2rem;
 }
 
 .formContainer h2 {
-  font-size: 24px;
-  margin-bottom: 1rem;
+  font-size: 36px;
+  color: #333;
+  font-weight: 900;
+  line-height: 50px;
+  margin-bottom: 3rem;
 }
 
 .discount {
-  background-color: #f9f9f9;
   padding: 1rem;
+  position: relative;
+  border: 0.125rem solid #d6d6d6;
   border-radius: 8px;
-  margin-bottom: 1.5rem;
+  opacity: 1;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 8px 0px rgba(216, 216, 216, 0.7);
+}
+
+.discount small::before {
+  content: "";
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-top: 0.7rem solid #d6d6d6;
+  bottom: -0.7rem;
 }
 
 .discount p {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0;
 }
 
 .discount small {
-  color: #888;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .options {
@@ -41,27 +61,38 @@
 }
 
 .options label {
-  background: #f1f1f1;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 72px;
+  border: 1px solid #e2e8ee;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-weight: 500;
+  padding: 24px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 #f0f0f0;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .options label:hover {
-  background: #e0e0e0;
+  background: #f5f6fc;
+  border-color: #007eab;
 }
 
-.options input[type="radio"] {
-  margin-right: 1rem;
-}
+.checked {
+    background: #f5f6fc;
+    border-color: #007eab !important;
+  }
 
 .imageContainer {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
