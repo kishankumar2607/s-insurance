@@ -60,7 +60,7 @@
               id="Vector 57 (Stroke)_2"
             ></path>
           </g>
-          <g id="tenant">
+          <!-- <g id="tenant">
             <path
               d="M193.989 0H132.932V213.773H193.989V0Z"
               fill="#AEA9F4"
@@ -5115,7 +5115,7 @@
                 </g>
               </g>
             </g>
-          </g>
+          </g> -->
           <line
             id="Line"
             stroke="#333333"

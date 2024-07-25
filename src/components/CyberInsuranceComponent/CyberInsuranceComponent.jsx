@@ -3,12 +3,14 @@ import styles from "./CyberInsuranceComponent.module.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import { Container } from "react-bootstrap";
 import ImageComponent from "../ImageComponent/ImageComponent";
-import ChangeImage from "./ChangeImage";
 import backgroundImage from "../../assets/cyber-form/background.svg";
+import HomeImage from "../../assets/cyber-form/home.png";
+import OfficeImage from "../../assets/cyber-form/office-building.png";
 
 const CyberInsuranceComponent = () => {
   const [selectedOption, setSelectedOption] = useState("individual");
 
+  
   return (
     <div className={styles.container}>
       <Container>
@@ -66,8 +68,27 @@ const CyberInsuranceComponent = () => {
             <ButtonComponent href={"#"} title="Next" />
           </div>
           <div className={styles.imageContainer}>
-            {/* <ChangeImage /> */}
-            <ImageComponent src={backgroundImage} alt="Store" />
+            {selectedOption === "individual" ? (
+              <ImageComponent
+                src={HomeImage}
+                alt={"Home Image"}
+                imageStyle={styles.homeImageStyle}
+              />
+            ) : null}
+
+            {selectedOption === "small-business" ? (
+              <ImageComponent
+                src={OfficeImage}
+                alt={"Office Image"}
+                imageStyle={styles.homeImageStyle}
+              />
+            ) : null}
+
+            <ImageComponent
+              src={backgroundImage}
+              alt="Store"
+              imageStyle={styles.backgroundImageStyle}
+            />
           </div>
         </div>
       </Container>

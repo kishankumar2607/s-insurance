@@ -92,7 +92,33 @@
 .imageContainer {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 50%;
+}
+
+.backgroundImageStyle{
+  position: relative;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.homeImageStyle{
+  position: absolute;
+  z-index: 999;
+}
+
+.homeImageStyle :nth-child(n){
+  height: 180px;
+  width: 100%;
+  animation: slideIn 0.6s ease-in-out forwards;
 }
