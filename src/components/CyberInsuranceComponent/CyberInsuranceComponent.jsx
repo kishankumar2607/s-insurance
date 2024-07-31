@@ -6,11 +6,12 @@ import ImageComponent from "../ImageComponent/ImageComponent";
 import backgroundImage from "../../assets/cyber-form/background.svg";
 import HomeImage from "../../assets/cyber-form/home.png";
 import OfficeImage from "../../assets/cyber-form/office-building.png";
+import individualImage from "../../assets/cyber-form/individualImage.png";
 
 const CyberInsuranceComponent = () => {
   const [selectedOption, setSelectedOption] = useState("individual");
 
-  
+
   return (
     <div className={styles.container}>
       <Container>
@@ -65,10 +66,18 @@ const CyberInsuranceComponent = () => {
                 />
               </label>
             </div>
-            <ButtonComponent href={"#"} title="Next" />
+            <ButtonComponent href={"/get-quote-form"} title="Next" />
           </div>
           <div className={styles.imageContainer}>
             {selectedOption === "individual" ? (
+              <ImageComponent
+                src={individualImage}
+                alt={"Office Image"}
+                imageStyle={styles.homeImageStyle}
+              />
+            ) : null}
+
+            {selectedOption === "small-business" ? (
               <ImageComponent
                 src={HomeImage}
                 alt={"Home Image"}
@@ -76,7 +85,7 @@ const CyberInsuranceComponent = () => {
               />
             ) : null}
 
-            {selectedOption === "small-business" ? (
+            {selectedOption === "large-corporation" ? (
               <ImageComponent
                 src={OfficeImage}
                 alt={"Office Image"}
