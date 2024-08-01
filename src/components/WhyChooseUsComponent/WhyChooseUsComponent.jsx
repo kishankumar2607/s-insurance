@@ -31,9 +31,9 @@ const WhyChooseUsComponent = () => {
   return (
     <section className={styles.whyChooseUs}>
       <Container>
-        <h2 className={styles.sectionTitle}>Why choose Scotia Insurance?</h2>
+        <h2 className={styles.sectionTitle}>Why choose SInsurance?</h2>
         <p className={styles.sectionDescription}>
-          Scotia Insurance has teamed up with some of Canada's most trusted
+          SInsurance has teamed up with some of Canada&apos;s most trusted
           insurance providers to give you access to the best insurance options
           for your needs.
         </p>

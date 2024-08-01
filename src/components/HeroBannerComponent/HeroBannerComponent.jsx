@@ -8,7 +8,7 @@ const HeroBannerComponent = () => {
       <Container>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            The plan for when things don't go as planned
+            `The plan for when things don&apos;t go as planned`
           </h1>
         </div>
       </Container>
