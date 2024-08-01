@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./WhyChooseUsComponent.module.css";
-import ImageComponent from "../ImageComponent/ImageComponent";
-import protectImage from "../../assets/images/protect-image.png";
-import coverageImage from "../../assets/images/Coverage-image.png";
-import needImage from "../../assets/images/needs-image.png";
-import { Container } from "react-bootstrap";
+import React from 'react';
+import styles from './WhyChooseUsComponent.module.css';
+import ImageComponent from '../ImageComponent/ImageComponent';
+import protectImage from '../../assets/images/protect-image.png';
+import coverageImage from '../../assets/images/Coverage-image.png';
+import needImage from '../../assets/images/needs-image.png';
+import { Container } from 'react-bootstrap';
 
 const reasons = [
   {

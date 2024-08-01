@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./HeroBannerComponent.module.css";
-import { Container } from "react-bootstrap";
+import React from 'react';
+import styles from './HeroBannerComponent.module.css';
+import { Container } from 'react-bootstrap';
 
 const HeroBannerComponent = () => {
   return (
