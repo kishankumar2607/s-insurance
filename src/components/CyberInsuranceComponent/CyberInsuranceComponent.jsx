@@ -11,6 +11,18 @@ import individualImage from "../../assets/cyber-form/individualImage.png";
 const CyberInsuranceComponent = () => {
   const [selectedOption, setSelectedOption] = useState("individual");
 
+  const getHref = () => {
+    switch (selectedOption) {
+      case "individual":
+        return "/get-quote-individual";
+      case "small-business":
+        return "/get-quote-small-business";
+      case "large-corporation":
+        return "/get-quote-large-corporation";
+      default:
+        return "#";
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -66,7 +78,7 @@ const CyberInsuranceComponent = () => {
                 />
               </label>
             </div>
-            <ButtonComponent href={"/get-quote-form"} title="Next" />
+            <ButtonComponent href={getHref()} title="Next" />
           </div>
           <div className={styles.imageContainer}>
             {selectedOption === "individual" ? (

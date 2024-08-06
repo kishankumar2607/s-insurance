@@ -1,22 +1,31 @@
-// components/GetQuoteForm.js
-import styles from './GetQuoteForm.module.css';
-import FormFields from '../FormFields/FormFields';
-import ImageComponent from '../ImageComponent/ImageComponent';
-import bannerImage from "../../assets/cyber-form/individual-cyber-form.png";
+import styles from "./GetQuoteForm.module.css";
+import FormFields from "../FormFields/FormFields";
+import ImageComponent from "../ImageComponent/ImageComponent";
+import bannerImage from "../../assets/cyber-form/individual-cyber-form1.png";
+import { Container } from "react-bootstrap";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 const GetQuoteForm = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.formContainer}>
-        <div className={styles.form}>
-          <h2>Last step before your price!</h2>
-          <FormFields />
-          <button type="submit" className={styles.button}>Get Quote</button>
+    <div className={styles.mainDiv}>
+      <Container>
+        <div className={styles.formContainer}>
+          <div className={styles.form}>
+            <h2>Last step before your price!</h2>
+            <FormFields />
+            <div className={styles.buttonDiv}>
+              <ButtonComponent title={"Get Quote"} href={"#"} />
+            </div>
+          </div>
+          <div className={styles.imageContainer}>
+            <ImageComponent
+              src={bannerImage}
+              alt={"banner image"}
+              imageStyle={styles.imageStyle}
+            />
+          </div>
         </div>
-        <div className={styles.imageContainer}>
-          <ImageComponent src={bannerImage} alt={"banner image"} imageStyle={styles.imageStyle}/>
-        </div>
-      </div>
+      </Container>
     </div>
   );
 };

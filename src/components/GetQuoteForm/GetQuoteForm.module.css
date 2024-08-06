@@ -1,54 +1,49 @@
 /* components/GetQuoteForm.module.css */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f8fc;
-  }
-  
-  .formContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 400px;
-    margin-right: 20px;
-  }
-  
-  .form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  
-  .button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .imageContainer {
-    /* flex: 1; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .imageStyle:nth-child(n) {
-    height: auto;
-    width: 500px;
-  }
-  
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+  background-color: #f7f8fc;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.buttonDiv {
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.imageStyle:nth-child(n) {
+  height: auto;
+  width: 500px;
+}

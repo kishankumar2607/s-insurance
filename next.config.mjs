@@ -20,7 +20,9 @@ export default {
       "/cyber-insurance": { page: "/cyber-insurance" },
       "/cyber-quote": { page: "/cyber-quote" },
       "/quote": { page: "/quote" },
-      "/get-quote-form": { page: "/get-quote-form" },
+      "/get-quote-individual": { page: "/get-quote-individual" },
+      "/get-quote-small-business": { page: "/get-quote-small-business" },
+      "/get-quote-large-corporation": { page: "/get-quote-large-corporation" },
     };
   },
 };
