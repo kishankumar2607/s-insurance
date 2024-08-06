@@ -1,7 +1,6 @@
 import styles from "./FormFields.module.css";
 import InputComponent from "../InputComponent/InputComponent";
 import SelectComponent from "../SelectComponent/SelectComponent";
-import CheckboxComponent from "../CheckboxComponent/CheckboxComponent";
 import CoverageDetailsComponent from "../CoverageDetailsComponent/CoverageDetailsComponent";
 
 const industryOptions = [
@@ -27,6 +26,12 @@ const annualRevenue = [
   { value: "5m+", label: "More than 5Ms" },
 ];
 
+const ContactMethod = [
+  {value: "", label: "Prefered Contact Method" },
+  {value: "Yes", label: "Yes"},
+  {value: "No", label: "No"},
+];
+
 const FormFields = () => {
   return (
     <div className={styles.formFields}>
@@ -38,23 +43,19 @@ const FormFields = () => {
         type={"text"}
         placeholder={"Phone Number"}
       />
-      <SelectComponent initailName="Industry" options={industryOptions} />
-      <InputComponent
-        name={"Cname"}
-        type={"text"}
-        placeholder={"Company Name"}
-      />
-      <SelectComponent
-        initailName={"Number of Employees"}
-        options={numberOfEmployees}
-      />
       <InputComponent name={"Address"} type={"text"} placeholder={"Address"} />
       <InputComponent
         name={"Postal"}
         type={"text"}
         placeholder={"Postal Code"}
       />
-      <SelectComponent initailName={"Annual Revenue"} options={annualRevenue} />
+      <InputComponent name={"DOB"} type={"text"} placeholder={"Date of Birth"} />
+      <InputComponent name={"Occupation"} type={"text"} placeholder={"Occupation"} />
+      <InputComponent name={"Number of Devices "} type={"number"} placeholder={"Number of Devices "} />  
+      <InputComponent name={"CyberIncident "} type={"text"} placeholder={"Have you experienced any cyber incidents in the past year?  "} />  
+      <SelectComponent initailName={"Prefered Contact Method"} options={ContactMethod} />
+
+
       <CoverageDetailsComponent />
     </div>
   );

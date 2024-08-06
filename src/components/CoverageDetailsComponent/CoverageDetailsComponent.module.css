@@ -26,3 +26,9 @@
 .addOndiv ul li::marker {
   color: #ec111a;
 }
+
+.detailsMainDiv{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
