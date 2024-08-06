@@ -1,13 +1,28 @@
-.cardDiv{
-    background-color: #fff;
-    border: 1px solid #ec111a;
-    border-radius: 8px;
-    padding: 1rem 1rem 0rem 1rem;
+.cardDiv {
+  background-color: transparent;
+  border: 1px solid #ec111a;
+  border-radius: 8px;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
-.cardDiv h4{
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem
+.cardDiv h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
+.addOndiv {
+  background-color: transparent;
+  border: 1px solid #ec111a;
+  border-radius: 8px;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.addOndiv ul {
+  margin-top: -10px;
+  padding-left: 1.3rem;
+}
+
+.addOndiv ul li::marker {
+  color: #ec111a;
 }
