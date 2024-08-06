@@ -11,7 +11,7 @@ const reasons = [
     icon: needImage,
     title: "Your needs first",
     description:
-      "Scotia Insurance puts you first. Our dedicated insurance advisors are here to provide you with personalized help and exceptional service.",
+      "SInsurance puts you first. Our dedicated insurance advisors are here to provide you with personalized help and exceptional service.",
   },
   {
     icon: protectImage,

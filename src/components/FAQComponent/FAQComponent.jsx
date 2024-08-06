@@ -6,7 +6,7 @@ const faqItems = [
   {
     question: "How can I get a quote?",
     answer:
-      "You can get a quote by visiting our website, calling our toll-free number, or speaking with one of our insurance advisors at your local Scotia Insurance branch.",
+      "You can get a quote by visiting our website, calling our toll-free number, or speaking with one of our insurance advisors at your local SInsurance branch.",
   },
   {
     question:
@@ -31,7 +31,7 @@ const faqItems = [
   },
 ];
 
-const legalNotes = `®Scotia Insurance is a registered trademark of The Bank of Nova Scotia, used under license by BNS Insurance Agency Inc. (“BNSIA”). Scotia Home & Auto Insurance is arranged for by BNSIA. 
+const legalNotes = `®SInsurance is a registered trademark of The Bank of Nova Scotia, used under license by BNS Insurance Agency Inc. (“BNSIA”). Scotia Home & Auto Insurance is arranged for by BNSIA. 
 
 Home and auto policies are underwritten by Belair Insurance Company Inc., and services are provided by belairdirect Agency Inc. except in the province of Quebec where the services are provided by Belair Insurance Company Inc. (collectively “belairdirect”). We offer car insurance and home insurance in Alberta, Ontario, Quebec, New Brunswick, Nova Scotia, Newfoundland and Labrador and Prince Edward Island and home insurance only in British Columbia.
 

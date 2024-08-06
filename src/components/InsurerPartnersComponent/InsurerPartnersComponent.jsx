@@ -44,7 +44,7 @@ const InsurerPartnersComponent = () => {
       <Container>
       <h2 className={styles.sectionTitle}>Our insurer partners</h2>
       <p className={styles.partnerDescription}>
-        At Scotia Insurance we are committed to building strong relationships
+        At SInsurance we are committed to building strong relationships
         with our insurer partners to bring our valued customers premium
         insurance products at competitive rates.
       </p>

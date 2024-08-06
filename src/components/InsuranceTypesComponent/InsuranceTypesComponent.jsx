@@ -38,7 +38,7 @@ const InsuranceTypesComponent = () => {
     <section className={styles.insuranceTypes}>
       <Container>
         <h2 className={styles.sectionTitle}>
-          When it comes to insurance for Canadians, Scotia Insurance has you
+          When it comes to insurance for Canadians, SInsurance has you
           covered
         </h2>
         <div className={styles.typesList}>

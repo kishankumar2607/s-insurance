@@ -25,7 +25,7 @@ const HeaderComponent = () => {
                 <Link href="/" passHref>
                   <ImageComponent
                     src={logo}
-                    alt="Scotia Insurance Logo"
+                    alt="SInsurance Logo"
                     imageStyle={styles.logoImage}
                   />
                 </Link>
