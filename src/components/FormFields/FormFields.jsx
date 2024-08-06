@@ -1,38 +1,32 @@
+import React, { useState } from "react";
 import styles from "./FormFields.module.css";
 import InputComponent from "../InputComponent/InputComponent";
 import SelectComponent from "../SelectComponent/SelectComponent";
 import CoverageDetailsComponent from "../CoverageDetailsComponent/CoverageDetailsComponent";
 
-const industryOptions = [
-  { value: "technology", label: "Technology" },
-  { value: "finance", label: "Finance" },
-  { value: "healthcare", label: "Healthcare" },
-];
-
-const numberOfEmployees = [
-  { value: "1-10", label: "1-10" },
-  { value: "11-50", label: "11-50" },
-  { value: "51-200", label: "51-200" },
-  { value: "201-500", label: "201-500" },
-  { value: "500+", label: "500+" },
-];
-
-const annualRevenue = [
-  { value: "", label: "Annual Revenue" },
-  { value: "<500k", label: "Less than 500k" },
-  { value: "51-200", label: "500k - 1M<" },
-  { value: "500k-1m", label: "201-500" },
-  { value: "1m-5m", label: "1M - 5M" },
-  { value: "5m+", label: "More than 5Ms" },
-];
-
 const ContactMethod = [
-  {value: "", label: "Prefered Contact Method" },
-  {value: "Yes", label: "Yes"},
-  {value: "No", label: "No"},
+  { value: "Yes", label: "Yes" },
+  { value: "No", label: "No" },
 ];
 
 const FormFields = () => {
+  const [dateValue, setDateValue] = useState("");
+  const [isDatePlaceholder, setIsDatePlaceholder] = useState(true);
+
+  const handleDateFocus = () => {
+    setIsDatePlaceholder(false);
+  };
+
+  const handleDateBlur = () => {
+    if (dateValue === "") {
+      setIsDatePlaceholder(true);
+    }
+  };
+
+  const handleDateChange = (event) => {
+    setDateValue(event.target.value);
+  };
+
   return (
     <div className={styles.formFields}>
       <InputComponent name={"Fname"} type={"text"} placeholder={"First Name"} />
@@ -49,12 +43,46 @@ const FormFields = () => {
         type={"text"}
         placeholder={"Postal Code"}
       />
-      <InputComponent name={"DOB"} type={"text"} placeholder={"Date of Birth"} />
-      <InputComponent name={"Occupation"} type={"text"} placeholder={"Occupation"} />
-      <InputComponent name={"Number of Devices "} type={"number"} placeholder={"Number of Devices "} />  
-      <InputComponent name={"CyberIncident "} type={"text"} placeholder={"Have you experienced any cyber incidents in the past year?  "} />  
-      <SelectComponent initailName={"Prefered Contact Method"} options={ContactMethod} />
-
+      <div className={styles.dateDiv}>
+        {isDatePlaceholder ? (
+          <input
+            type="text"
+            placeholder="Date of Birth"
+            onFocus={handleDateFocus}
+            className={styles.input}
+          />
+        ) : (
+          <input
+            name="DOB"
+            type="date"
+            value={dateValue}
+            onChange={handleDateChange}
+            onBlur={handleDateBlur}
+            className={styles.input}
+          />
+        )}
+      </div>
+      <InputComponent
+        name={"Occupation"}
+        type={"text"}
+        placeholder={"Occupation"}
+      />
+      <InputComponent
+        name={"Number of Devices "}
+        type={"number"}
+        placeholder={"Number of Devices "}
+      />
+      <InputComponent
+        name={"CyberIncident "}
+        type={"text"}
+        placeholder={
+          "Have you experienced any cyber incidents in the past year?  "
+        }
+      />
+      <SelectComponent
+        initailName={"Prefered Contact Method"}
+        options={ContactMethod}
+      />
 
       <CoverageDetailsComponent />
     </div>

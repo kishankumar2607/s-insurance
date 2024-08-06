@@ -12,7 +12,7 @@ const CheckboxComponent = ({ label }) => {
   return (
     <div className={styles.checkbox}>
       <label className={styles.checkboxLabel}>
-        {label}
+        <h4>{label}</h4>
         <input
           type="checkbox"
           checked={checked}
