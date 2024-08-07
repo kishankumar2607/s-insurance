@@ -9,7 +9,7 @@ const InsuranceHeroBannerComponent = () => {
       <Container>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Cyber Insurance</h1>
-          <h3 className={styles.heroDescription}>“Shielding Your Digital World with Confidence”</h3>
+          <h3 className={styles.heroDescription}>Shielding Your Digital World with Confidence</h3>
           <Link href={"/cyber-quote"} passHref>
             <button className={styles.animatedButton}>Request A Quote</button>
           </Link>

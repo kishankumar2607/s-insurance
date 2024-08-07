@@ -1,8 +1,8 @@
-/* components/GetQuoteForm.module.css */
+
 .mainDiv {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 5rem 0rem;
   background-color: #f7f8fc;
 }
@@ -10,7 +10,7 @@
 .formContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
 }
 
@@ -21,7 +21,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 60%;
-  margin-right: 20px;
+}
+
+.mainTitle{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2.5rem;
 }
 
 .form h2 {
@@ -39,7 +46,7 @@
 .imageContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 40%;
 }
 

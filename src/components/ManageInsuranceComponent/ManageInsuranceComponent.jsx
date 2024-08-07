@@ -5,6 +5,7 @@ import loginIcon from "../../assets/images/login-icon.svg";
 import appStoreIcon from "../../assets/images/app-store-image.png";
 import playStoreIcon from "../../assets/images/play-store-image.png";
 import manageInsuranceImage from "../../assets/images/manage-insurance-image.png";
+import manageInsuranceImage1 from "../../assets/images/manage-insurance-image1.png";
 import { Container } from "react-bootstrap";
 
 const ManageInsuranceComponent = () => {
@@ -45,7 +46,7 @@ const ManageInsuranceComponent = () => {
           </div>
         </div>
         <ImageComponent
-          src={manageInsuranceImage}
+          src={manageInsuranceImage1}
           alt="Manage Insurance Online"
           imageStyle={styles.manageImage}
         />

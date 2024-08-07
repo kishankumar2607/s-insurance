@@ -9,6 +9,7 @@ const GetQuoteForm = () => {
   return (
     <div className={styles.mainDiv}>
       <Container>
+      <h1 className={styles.mainTitle}>Individual Business</h1>
         <div className={styles.formContainer}>
           <div className={styles.form}>
             <h2>Last step before your price!</h2>

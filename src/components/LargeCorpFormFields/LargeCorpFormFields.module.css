@@ -1,0 +1,41 @@
+.mainDivStyle{
+    padding: 5rem 0rem;
+    background-color: #f7f8fc;
+}
+
+.mainTitle{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2.5rem;
+  }
+
+.formFields{
+    display: flex;
+}
+
+.imageDiv{
+    width: 40%;
+}
+
+.formFieldsDiv{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 60%;
+}
+
+.formFieldsDiv h2 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+.buttonDiv {
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }

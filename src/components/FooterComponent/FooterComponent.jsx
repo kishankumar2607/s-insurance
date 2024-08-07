@@ -29,7 +29,7 @@ const FooterComponent = () => {
         </div>
       </Container>
       <div className={styles.copyrightDiv}>
-        <p className={styles.copyright}>© Scotiabank.com All Rights Reserved</p>
+        <p className={styles.copyright}>&copy; SInsurance. All Rights Reserved</p>
       </div>
     </footer>
   );

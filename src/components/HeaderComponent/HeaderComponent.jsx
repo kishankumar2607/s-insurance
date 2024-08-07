@@ -15,7 +15,11 @@ const HeaderComponent = () => {
     <header className={styles.header}>
       <div className={styles.languageSelector}>
         <span className={styles.language}>English</span>
-        <ImageComponent src={downArrow} alt="arrow" imageStyle={styles.downArrowImage} />
+        <ImageComponent
+          src={downArrow}
+          alt="arrow"
+          imageStyle={styles.downArrowImage}
+        />
       </div>
       <div className={styles.shadow}>
         <Container>
@@ -33,42 +37,77 @@ const HeaderComponent = () => {
               <ul className={styles.navLinks}>
                 <li>
                   <Link href="/auto" passHref legacyBehavior>
-                    <a className={router.pathname === "/auto" ? styles.active : ""}>Auto</a>
+                    <a
+                      className={
+                        router.pathname === "/auto" ? styles.active : ""
+                      }
+                    >
+                      Auto
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/home" passHref legacyBehavior>
-                    <a className={router.pathname === "/home" ? styles.active : ""}>Home</a>
+                    <a
+                      className={
+                        router.pathname === "/home" ? styles.active : ""
+                      }
+                    >
+                      Home
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/health" passHref legacyBehavior>
-                    <a className={router.pathname === "/health" ? styles.active : ""}>Health</a>
+                    <a
+                      className={
+                        router.pathname === "/health" ? styles.active : ""
+                      }
+                    >
+                      Health
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/life" passHref legacyBehavior>
-                    <a className={router.pathname === "/life" ? styles.active : ""}>Life</a>
+                    <a
+                      className={
+                        router.pathname === "/life" ? styles.active : ""
+                      }
+                    >
+                      Life
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/travel" passHref legacyBehavior>
-                    <a className={router.pathname === "/travel" ? styles.active : ""}>Travel</a>
+                    <a
+                      className={
+                        router.pathname === "/travel" ? styles.active : ""
+                      }
+                    >
+                      Travel
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/cyber-insurance" passHref legacyBehavior>
-                    <a className={router.pathname === "/cyber-insurance" ? styles.active : ""}>Cyber Insurance</a>
+                    <a
+                      className={
+                        router.pathname === "/cyber-insurance"
+                          ? styles.active
+                          : ""
+                      }
+                    >
+                      Cyber Insurance
+                    </a>
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
               <Link href="/" passHref>
-                <ImageComponent
-                  src={searchIcon}
-                  alt="Search Icon"
-                />
+                <ImageComponent src={searchIcon} alt="Search Icon" />
               </Link>
             </div>
           </nav>
