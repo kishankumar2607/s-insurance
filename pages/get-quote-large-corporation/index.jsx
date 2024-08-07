@@ -1,8 +1,11 @@
+import LargeCorpFormFields from '@/src/components/LargeCorpFormFields/LargeCorpFormFields'
 import React from 'react'
 
 const index = () => {
   return (
-    <div>get-quote-large-corporations</div>
+    <div>
+      < LargeCorpFormFields />
+    </div>
   )
 }
 

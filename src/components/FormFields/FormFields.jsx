@@ -27,7 +27,11 @@ const annualRevenue = [
 ];
 
 const ContactMethod = [
-  {value: "", label: "Prefered Contact Method" },
+  {value: "Email", label: "Email"},
+  {value: "Call", label: "Call"},
+];
+
+const YN = [
   {value: "Yes", label: "Yes"},
   {value: "No", label: "No"},
 ];
@@ -52,7 +56,7 @@ const FormFields = () => {
       <InputComponent name={"DOB"} type={"text"} placeholder={"Date of Birth"} />
       <InputComponent name={"Occupation"} type={"text"} placeholder={"Occupation"} />
       <InputComponent name={"Number of Devices "} type={"number"} placeholder={"Number of Devices "} />  
-      <InputComponent name={"CyberIncident "} type={"text"} placeholder={"Have you experienced any cyber incidents in the past year?  "} />  
+      <SelectComponent initailName={"Have you experienced any cyber incidents in the past year? "} options={YN} />  
       <SelectComponent initailName={"Prefered Contact Method"} options={ContactMethod} />
 
 
