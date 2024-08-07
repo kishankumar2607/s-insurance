@@ -10,8 +10,8 @@ const CoverageDetailsComponent = () => {
   return (
     <div className={styles.detailsMainDiv}>
       <CoverageDetailsCard addOn addOnLabel={"Basic Coverage"} items={addOnabels1} />
-      <CoverageDetailsCard addOn addOnLabel={"Enhanced Coverage"} items={addOnabels2} />
       <CoverageDetailsCard addOn addOnLabel={"Comprehensive Coverage"} items={addOnabels3} />
+      <CoverageDetailsCard addOn addOnLabel={"Enhanced Coverage"} items={addOnabels2} />
       <CoverageDetailsCard title={"Add-Ons"} labels={checkboxLabels} />
     </div>
   );

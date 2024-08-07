@@ -36,6 +36,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
           rel="stylesheet"
         />
+        <title>
+          SInsurance | Cyber Insurance, Life, Car, Travel, Home, Health
+          Insurance
+        </title>
       </Head>
       <body>
         <Main />

@@ -20,7 +20,7 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  width: 50%;
+  width: 60%;
   margin-right: 20px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .buttonDiv {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   width: 100%;
   text-align: center;
 }
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 40%;
 }
 
 .imageStyle:nth-child(n) {
