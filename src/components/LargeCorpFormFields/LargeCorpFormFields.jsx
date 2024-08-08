@@ -30,13 +30,10 @@ const LargeCorpFormFields = () => {
   return (
     <div className={styles.mainDivStyle}>
       <Container>
-      <h1 className={styles.mainTitle}>Large Business</h1>
+        <h1 className={styles.mainTitle}>Large Business</h1>
         <div className={styles.formFields}>
-          <div className={styles.imageDiv}>
-            <ImageComponent src={LargeCorporationImage} alt={LargeCorporationImage}/>
-          </div>
           <div className={styles.formFieldsDiv}>
-          <h2>Last step before your price!</h2>
+            <h2>Last step before your price!</h2>
             <InputComponent
               name={"Bname"}
               type={"text"}
@@ -128,6 +125,12 @@ const LargeCorpFormFields = () => {
             <div className={styles.buttonDiv}>
               <ButtonComponent title={"Get Quote"} href={"#"} />
             </div>
+          </div>
+          <div className={styles.imageDiv}>
+            <ImageComponent
+              src={LargeCorporationImage}
+              alt={LargeCorporationImage}
+            />
           </div>
         </div>
       </Container>

@@ -1,10 +1,10 @@
-import LargeCorpFormFields from '@/src/components/LargeCorpFormFields/LargeCorpFormFields'
 import React from 'react'
+import LargeCorpFormFields from '@/src/components/LargeCorpFormFields/LargeCorpFormFields'
 
 const index = () => {
   return (
     <div>
-      < LargeCorpFormFields />
+      <LargeCorpFormFields />
     </div>
   )
 }

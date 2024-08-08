@@ -1,0 +1,22 @@
+
+.mainDivP{
+    background-color: #fff;
+}
+
+.adviceSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0rem;
+  }
+  
+  .adviceSection h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+    

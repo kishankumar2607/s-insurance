@@ -23,6 +23,7 @@ export default {
       "/get-quote-individual": { page: "/get-quote-individual" },
       "/get-quote-small-business": { page: "/get-quote-small-business" },
       "/get-quote-large-corporation": { page: "/get-quote-large-corporation" },
+      "/make-a-claim": { page: "/make-a-claim" },
     };
   },
 };

@@ -6,29 +6,29 @@
 }
 
 .cardDiv h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.addOndiv {
+.addOnDiv {
   background-color: transparent;
   border: 1px solid #ec111a;
   border-radius: 8px;
   padding: 1rem 1rem 0rem 1rem;
 }
 
-.addOndiv ul {
+.addOnDiv ul {
   margin-top: -5px;
   padding-left: 1.3rem;
 }
 
-.addOndiv ul li {
+.addOnDiv ul li {
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-.addOndiv ul li::marker {
+.addOnDiv ul li::marker {
   color: #ec111a;
 }
 

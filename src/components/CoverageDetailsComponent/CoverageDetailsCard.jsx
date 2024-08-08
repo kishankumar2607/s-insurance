@@ -1,15 +1,22 @@
 import React from "react";
 import styles from "./CoverageDetailsComponent.module.css";
 import CheckboxComponent from "../CheckboxComponent/CheckboxComponent";
+import RadioButtonComponent from "../RadioButtonComponent/RadioButtonComponent";
 
-const CoverageDetailsCard = ({ addOn, title, items, addOnLabel, labels }) => {
+const CoverageDetailsCard = ({ addOn, title, items, addOnLabel, labels, selectedOption, onChange }) => {
   return !!addOn ? (
-    <div className={styles.addOndiv}>
-      <CheckboxComponent label={addOnLabel} />
+    <div className={styles.addOnDiv}>
+      <RadioButtonComponent
+        label={addOnLabel}
+        id={addOnLabel}
+        name="coverage"
+        checked={selectedOption === addOnLabel}
+        onChange={() => onChange(addOnLabel)}
+      />
       <ul>
-        {items.map((item, index) => {
-          return <li key={index}>{item}</li>;
-        })}
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
   ) : (

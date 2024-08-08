@@ -1,0 +1,15 @@
+.mainDiv{
+    background-color: #ec111a;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 400px;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+}
