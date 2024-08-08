@@ -8,7 +8,7 @@ const MakeClaimComponent = () => {
     <div className={styles.mainDiv}>
         <Container>
             <div className={styles.adviceSection}>
-            <h2>Quick and Easy Claims: We're Here for You</h2>
+            <h2>Quick and Easy Claims: We are Here for You</h2>
             <ButtonComponent href={"/make-a-claim"} title={"Make a claim"} />
             </div>
         </Container>

@@ -6,7 +6,7 @@ import ImageComponent from "./../../src/components/ImageComponent/ImageComponent
 import serviceImage from "../../src/assets/cyber-form/services.jpeg";
 import ButtonComponent from "./../../src/components/ButtonComponent/ButtonComponent";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   const { coverage } = router.query;
 
@@ -92,4 +92,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
