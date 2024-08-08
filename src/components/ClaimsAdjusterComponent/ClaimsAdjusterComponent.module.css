@@ -1,0 +1,28 @@
+.mainDiv {
+  background-color: #ffffff;
+}
+
+.innerDiv {
+  padding: 3rem 4rem;
+}
+
+.manageTitle {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.manageFeatures {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #333;
+  padding-left: 3rem;
+  margin-bottom: 30px;
+}
+
+.manageFeatures li {
+  margin-bottom: 10px;
+}

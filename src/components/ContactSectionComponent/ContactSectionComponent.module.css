@@ -1,0 +1,70 @@
+.contactSection {
+  text-align: center;
+  padding: 4rem 0rem 2.5rem;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+
+.manageTitle {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contactMethods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.contactMethod {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ec111a;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.contactMethod:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contactMethod h3 {
+  margin: 1.5rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contactMethod p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.contactMethod a {
+  display: block;
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ec111a;
+  text-decoration: none;
+  border-bottom: 1px dashed #ec111a;
+}
+
+.icon:nth-child(n) {
+  width: 60px !important;
+  height: auto;
+}
