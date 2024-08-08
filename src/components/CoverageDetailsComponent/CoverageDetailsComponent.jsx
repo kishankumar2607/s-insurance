@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CoverageDetailsCard from "./CoverageDetailsCard";
 import styles from "./CoverageDetailsComponent.module.css";
 
-const CoverageDetailsComponent = () => {
+const CoverageDetailsComponent = ({onOptionChange}) => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const checkboxLabels = [
@@ -37,6 +37,11 @@ const CoverageDetailsComponent = () => {
     "Employee Training Programs",
   ];
 
+  const handleOptionChange = (option) => {
+    setSelectedOption(option);
+    onOptionChange(option);
+  };
+
   return (
     <div className={styles.detailsMainDiv}>
       <CoverageDetailsCard
@@ -44,21 +49,21 @@ const CoverageDetailsComponent = () => {
         addOnLabel="Basic Coverage"
         items={addOnLabels1}
         selectedOption={selectedOption}
-        onChange={setSelectedOption}
+        onChange={handleOptionChange}
       />
       <CoverageDetailsCard
         addOn
         addOnLabel="Comprehensive Coverage"
         items={addOnLabels3}
         selectedOption={selectedOption}
-        onChange={setSelectedOption}
+        onChange={handleOptionChange}
       />
       <CoverageDetailsCard
         addOn
         addOnLabel="Enhanced Coverage"
         items={addOnLabels2}
         selectedOption={selectedOption}
-        onChange={setSelectedOption}
+        onChange={handleOptionChange}
       />
       <CoverageDetailsCard title="Add-Ons" labels={checkboxLabels} />
     </div>

@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import styles from "./GetQuoteForm.module.css";
 import FormFields from "../FormFields/FormFields";
 import ImageComponent from "../ImageComponent/ImageComponent";
@@ -14,9 +16,6 @@ const GetQuoteForm = () => {
           <div className={styles.form}>
             <h2>Last step before your price!</h2>
             <FormFields />
-            <div className={styles.buttonDiv}>
-              <ButtonComponent title={"Get Quote"} href={"#"} />
-            </div>
           </div>
           <div className={styles.imageContainer}>
             <ImageComponent

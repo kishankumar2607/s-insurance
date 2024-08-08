@@ -24,6 +24,9 @@ export default {
       "/get-quote-small-business": { page: "/get-quote-small-business" },
       "/get-quote-large-corporation": { page: "/get-quote-large-corporation" },
       "/make-a-claim": { page: "/make-a-claim" },
+      "/get-final-quote-individual": { page: "/get-final-quote-individual" },
+      "/get-final-quote-large-corporate": { page: "/get-final-quote-large-corporate" },
+      "/get-final-quote-small-business": { page: "/get-final-quote-small-business" },
     };
   },
 };
