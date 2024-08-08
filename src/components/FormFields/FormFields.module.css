@@ -18,6 +18,8 @@
   width: 100%;
 }
 
-.buttonDiv{
-  margin-top: 2rem
+.buttonDiv {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
 }

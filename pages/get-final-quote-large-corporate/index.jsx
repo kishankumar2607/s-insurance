@@ -49,6 +49,17 @@ const index = () => {
     items: [],
   };
 
+  const handleDownload = () => {
+    if (typeof window !== "undefined") {
+      const link = document.createElement("a");
+      link.href = "/files/cyber-insurance-application.pdf";
+      link.download = "cyber-insurance-application.pdf";
+      document.body.appendChild(link); 
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
     <div className={styles.mainDiv}>
       <Container>
@@ -73,7 +84,7 @@ const index = () => {
         <div>
           <div className={styles.adviceSection}>
             <h2>Make a claim</h2>
-            <ButtonComponent href={"/make-a-claim"} title={"Make a claim"} />
+            <ButtonComponent href={"#"} onClick={() => handleDownload()} title={"Get Application"} />
           </div>
         </div>
       </Container>
