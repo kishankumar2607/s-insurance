@@ -12,7 +12,7 @@ const index = () => {
 
   const coverageDetails = {
     "Basic Coverage": {
-      price: "$100",
+      price: "$10000",
       items: [
         "Data Breaches",
         "Malware and Virus Attacks",
@@ -22,7 +22,7 @@ const index = () => {
       ],
     },
     "Enhanced Coverage": {
-      price: "$200",
+      price: "$15000",
       items: [
         "All Basic Coverage Inclusions",
         "Ransom Attacks",
@@ -32,7 +32,7 @@ const index = () => {
       ],
     },
     "Comprehensive Coverage": {
-      price: "$300",
+      price: "$20000",
       items: [
         "All Basic and Enhanced Coverage Inclusions",
         "Reputation Management",
@@ -83,7 +83,7 @@ const index = () => {
         </div>
         <div>
           <div className={styles.adviceSection}>
-            <h2>Make a claim</h2>
+            <h2>Download Your Cyber Insurance Application Today</h2>
             <ButtonComponent href={"#"} onClick={() => handleDownload()} title={"Get Application"} />
           </div>
         </div>

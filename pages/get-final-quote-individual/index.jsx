@@ -12,7 +12,7 @@ const index = () => {
 
   const coverageDetails = {
     "Basic Coverage": {
-      price: "$500",
+      price: "$1500",
       items: [
         "Data Breaches",
         "Malware and Virus Attacks",
