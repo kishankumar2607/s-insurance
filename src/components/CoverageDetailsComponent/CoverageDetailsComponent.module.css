@@ -9,6 +9,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #000000;
 }
 
 .addOnDiv {
@@ -26,6 +27,7 @@
 .addOnDiv ul li {
   font-size: 14px;
   margin-bottom: 5px;
+  color: #000000;
 }
 
 .addOnDiv ul li::marker {

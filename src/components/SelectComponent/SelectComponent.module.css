@@ -3,12 +3,14 @@
     width: 100%;
   }
   
-  .input, .select {
+  .select {
     width: 100%;
     padding: 10px;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 600;
+    color: #000000;
   }
   
