@@ -1,0 +1,79 @@
+.mainDiv {
+  background-color: #ffffff;
+  padding: 4rem 0rem;
+}
+
+.innerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manageTitle {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.selectedCoverage {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price {
+  background-color: #ec111a;
+  width: fit-content;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.listStyle {
+  border: 1.5px solid #ec111a;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.listStyle p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ec111a;
+}
+
+.listStyle li {
+  margin-left: 1.3rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.listStyle li::marker {
+  color: #ec111a;
+}
+
+
+.adviceSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0rem;
+  }
+  
+  .adviceSection h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }

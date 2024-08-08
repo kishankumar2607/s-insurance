@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./LargeCorpFormFields.module.css";
 import InputComponent from "../InputComponent/InputComponent";
 import SelectComponent from "../SelectComponent/SelectComponent";
@@ -26,7 +26,18 @@ const YN = [
   { value: "No", label: "No" },
 ];
 
+
 const LargeCorpFormFields = () => {
+  const [selectedCoverage, setSelectedCoverage] = useState("");
+
+  const handleCoverageChange = (option) => {
+    setSelectedCoverage(option);
+  };
+
+  const generateQuoteHref = () => {
+    return `/get-final-quote-large-corporate?coverage=${encodeURIComponent(selectedCoverage)}`;
+  };
+
   return (
     <div className={styles.mainDivStyle}>
       <Container>
@@ -120,10 +131,10 @@ const LargeCorpFormFields = () => {
               options={ContactMethod}
             />
 
-            <CoverageDetailsComponent />
+            <CoverageDetailsComponent onOptionChange={handleCoverageChange} />
 
             <div className={styles.buttonDiv}>
-              <ButtonComponent title={"Get Quote"} href={"#"} />
+              <ButtonComponent title={"Get Quote"} href={generateQuoteHref()}  />
             </div>
           </div>
           <div className={styles.imageDiv}>

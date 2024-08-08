@@ -1,6 +1,10 @@
 import { useRouter } from "next/router";
 import React from "react";
-// import styles from './quote.module.css';
+import styles from "./quote.module.css";
+import { Container } from "react-bootstrap";
+import ImageComponent from "./../../src/components/ImageComponent/ImageComponent";
+import serviceImage from "../../src/assets/cyber-form/services.jpeg";
+import ButtonComponent from "./../../src/components/ButtonComponent/ButtonComponent";
 
 const index = () => {
   const router = useRouter();
@@ -46,15 +50,33 @@ const index = () => {
   };
 
   return (
-    <div>
-      <h1>Quote Details</h1>
-      <p>Selected Coverage: {coverage || "None"}</p>
-      <p>Price: {coverageInfo.price}</p>
-      <ul>
-        {coverageInfo.items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+    <div className={styles.mainDiv}>
+      <Container>
+        <div className={styles.innerDiv}>
+          <div>
+            <h1 className={styles.manageTitle}>Quotes Just made for you!</h1>
+            <p className={styles.selectedCoverage}>
+              Selected Coverage: {coverage || "None"}
+            </p>
+            <p className={styles.price}>Price: {coverageInfo.price}</p>
+            <ul className={styles.listStyle}>
+              <p>{coverage || "None"}</p>
+              {coverageInfo.items.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <ImageComponent src={serviceImage} />
+          </div>
+        </div>
+        <div>
+          <div className={styles.adviceSection}>
+            <h2>Make a claim</h2>
+            <ButtonComponent href={"/make-a-claim"} title={"Make a claim"} />
+          </div>
+        </div>
+      </Container>
     </div>
   );
 };

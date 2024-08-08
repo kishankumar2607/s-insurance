@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SmallFormFieldComponent.module.css";
 import InputComponent from "../InputComponent/InputComponent";
 import SelectComponent from "../SelectComponent/SelectComponent";
@@ -27,13 +27,28 @@ const YN = [
 ];
 
 const SmallFormFieldComponent = () => {
+  const [selectedCoverage, setSelectedCoverage] = useState("");
+
+  const handleCoverageChange = (option) => {
+    setSelectedCoverage(option);
+  };
+
+  const generateQuoteHref = () => {
+    return `/get-final-quote-small-business?coverage=${encodeURIComponent(
+      selectedCoverage
+    )}`;
+  };
+
   return (
     <div className={styles.mainDivStyle}>
       <Container>
         <h1 className={styles.mainTitle}>Small Business</h1>
         <div className={styles.formFields}>
           <div className={styles.imageDiv}>
-            <ImageComponent src={SmallCorporationImage} alt={"SmallCorporationImage"}/>
+            <ImageComponent
+              src={SmallCorporationImage}
+              alt={"SmallCorporationImage"}
+            />
           </div>
           <div className={styles.formFieldsDiv}>
             <h2>Last step before your price!</h2>
@@ -117,9 +132,9 @@ const SmallFormFieldComponent = () => {
               options={ContactMethod}
             />
 
-            <CoverageDetailsComponent />
+            <CoverageDetailsComponent onOptionChange={handleCoverageChange} />
             <div className={styles.buttonDiv}>
-              <ButtonComponent title={"Get Quote"} href={"#"} />
+              <ButtonComponent title={"Get Quote"} href={generateQuoteHref()} />
             </div>
           </div>
         </div>
