@@ -13,7 +13,7 @@ const ContactSectionComponent = () => {
       <Container>
         <div className={styles.innerDiv}>
           <h2 className={styles.manageTitle}>
-            Contact us about your home insurance claim
+            Contact us about your Cyber insurance claim
           </h2>
           <div className={styles.contactMethods}>
             <div className={styles.contactMethod}>
@@ -24,7 +24,7 @@ const ContactSectionComponent = () => {
               />
               <h3>Claims</h3>
               <p>24/7</p>
-              <a href="tel:1-833-223-8743">1-833-223-8743</a>
+              <a href="tel:1-000-000-0000">1-000-000-0000</a>
               <Link href={"#"} passHref legacyBehavior>
                 <a>Submit a claim</a>
               </Link>
@@ -37,7 +37,7 @@ const ContactSectionComponent = () => {
               />
               <h3>Phone</h3>
               <p>Talk to one of our agents. We’re here to help.</p>
-              <a href="tel:1-833-224-7305">1-833-224-7305</a>
+              <a href="tel:1-000-000-0000">1-000-000-0000</a>
             </div>
             <div className={styles.contactMethod}>
               <ImageComponent
